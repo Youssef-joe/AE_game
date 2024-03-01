@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE Game</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            gap: 50px;
+
+        }
+
+        body {
+            background-color: rgb(146, 142, 118);
+        }
+
+        .text {
+            width: 150px;
+            height: 40px;
+            background-color: #d3cdcd;
+            border: none;
+            outline: none;
+            box-shadow: 1px 1px 2px black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .submit {
+            width: 80px;
+            height: 40px;
+            font-family: monospace;
+            font-weight: 600;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .submit:active {
+            background-color: rgb(101, 100, 99);
+        }
+
+        .space {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+
+
+        }
+        .space img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        .space p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        
+    </style>
+
+<div class="container">
+
+
+    <input type="text" class="text" id="input"> 
+    <input type="submit" class="submit" id="btn">
+
+    <div class="space" id="space" >
+
+    </div>
+
+</div>
+
+
+    <script>
+        let input = document.getElementById('input');
+        let button = document.getElementById('btn');
+        let div = document.getElementById('space')
+        button.addEventListener('click', () => {
+            if (input.value == 'youssef') {
+                div.innerHTML = 'Hello'
+            } else if (input.value == 'eyad') {
+                div.innerHTML = `
+                <img src="${input.value}.jpg" />
+                <p> You Look Lonely, No one can fix that </p>
+                `
+            }  else if (input.value == 'yassin') {
+                div.innerHTML = `
+                <img src="${input.value}.jpg" />
+                I love you but,
+                Stop cheating with chatGPT 
+
+
+                 `
+            }
+            else if (input.value == 'ahmedH') {
+                div.innerHTML = ` 
+
+                <img src="${input.value}.jpg" />
+                <p>ساعات بتبقى كده</p>
+
+                 `
+            }else if (input.value == 'eslam') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> انحسك فنان وذوقك جميل </p>
+                 `
+            }else if (input.value == 'zizo') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> ساعات بتبقى كده </p>
+                 `
+            }else if (input.value == 'abdoRashad') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> بحبك يا فنان والله </p>
+
+                 `
+            }else if (input.value == 'abdullah') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> You're too nice to belong to this age, Stay pure we love you alot. </p>
+
+                 `
+            }
+            else if (input.value == 'alaa') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> You're too cute like a flower, everbody admires the minutes spent talking with you, So do I </p>
+
+                 `}
+                 else if (input.value == 'mego') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> الجندي المجتهد والمحبوب, حرفيًا كلنا بنحبك يا ميجو </p>
+
+                 `}
+                 else if (input.value == 'mordy') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Mordy mordok, literally loved every minute i've spent with you </p>
+
+                 `}
+                 else if (input.value == 'sanad') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> The kind hearted, cultured, Toxic Engineer  </p>
+
+                 `}
+                 else if (input.value == 'asmaa') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our cultured, kind hearted Doctor, You got all my respect </p>
+
+                 `}
+                 else if (input.value == 'aya') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p>our Pure, kind, and cultured artist.. we all loved you alot </p>
+
+                 `}
+                 else if (input.value == 'ayman') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                We had great nights, walking home after working that was simple and great
+
+                 `}
+                 else if (input.value == 'bassem') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our good dentist. </p>
+
+                 `}
+                 else if (input.value == 'Donia') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our kind hearted donia, We're all glad to win you as a friend.
+                    Du bist schön und gutherzig </p>
+
+
+                 `}
+                 else if (input.value == 'habiba') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our artist and who has a great eye. </p>
+
+                 `}
+                 else if (input.value == 'huda') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> the most kind hearted friend and butterfly, keep being that pure, we all love you alot. </p>
+
+                 `}
+                 else if (input.value == 'maggie') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p>our kind hearted strong leader, i respect you alot. </p>
+
+                 `}
+                 else if (input.value == 'marwa') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our most kindhearted phsycologist, we all love you. </p>
+
+                 `}
+                 else if (input.value == 'menna') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+
+                <p> البت الشطوية بتاعة الانجلش, سوشياليز اكتر </p>
+
+
+                 `}
+                 else if (input.value == 'mohsen') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> mo7senoov chess buddy, you're vere cultured and i like talking with you. </p>
+
+                 `}
+                 else if (input.value == 'abobakr') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> our CS genius i'm so glad to win you as a friend</p>
+
+                 `}
+                 else if (input.value == 'mohamedAli') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our Book nerd, i'm so glad to win a cultured so kind hearted friend like you </p>
+
+                 `}
+                 else if (input.value == 'tharwat') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Our golden boy in AE-2024 
+                    حبيبي يا عم ثروت </p>
+
+                 `}
+                 else if (input.value == 'mohran') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> حبيبي يا عم الطاقة والنشاط والحيوية  </p>
+
+                 `}
+                 else if (input.value == 'fawaz') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> The most loveable and funny Engineer, Who also has the best vibes </p>
+
+                 `}
+                 else if (input.value == 'desha') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p>  عم الدنيا ديشا بيه, احسن واحد بيشوف شغله وقعدتك بالدنياوالله </p>
+
+                 `}
+                 else if (input.value == 'Nada') {
+                div.innerHTML = ` 
+                
+                <p> We're glad to know a kind hearted friend like you. </p>
+
+                 `}
+                 else if (input.value == 'Nahla') {
+                div.innerHTML = ` 
+                <p> Our big novelist, we're proud and glad to win you in our lifes.  </p>
+                <p> Our  </p>
+
+                 `}
+                 else if (input.value == 'Nour') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> You wish to be a princes!  You actually are.. </p>
+
+                 `}
+                 else if (input.value == 'ramez') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> I'm glad to win you as a friend, and i love spending time sharing with you </p>
+
+                 `}
+                 else if (input.value == 'Rana') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> You're making such a great vibes! </p>
+
+                 `}
+                 else if (input.value == 'Rawan') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> You're a great artist ي بتاعة الانجلش </p>
+
+                 `}
+                 else if (input.value == 'Rula') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> المحامية بتاعتنا </p>
+
+                 `}
+                 else if (input.value == 'saif') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> اخويا في نعيم الجهل والمرمغة في المساحات الخضراء وتكبير الدماغ </p>
+
+                 `}
+                 else if (input.value == 'SalmaAhmed') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> I love your vibes. </p>
+
+
+                 `}
+                 else if (input.value == 'Shrouk') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> دكتورتنا وفخر الدار. </p>
+
+                 `}
+                 else if (input.value == 'Yasmine') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> فنانة بكل ما تحمله الكلمة من معنى. </p>
+
+                 `}
+                 else if (input.value == 'YoussefSalah') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> اتشرفت بمعرفتك يا جو والله وشكلك بتكتب بايثون وتبقى اخويا ف المجال </p>
+
+                 `}
+                 else if (input.value == 'Bakr') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> فلاحنا المثقف واللي بنحبه وبنحب حكمته </p>
+
+                 `}
+                 else if (input.value == 'Gamila') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> ألطف جميله في الدنيا. </p>
+
+                 `}
+                 else if (input.value == 'Dahlob') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> فلاحنا المثقف اللي بحبه وبحب كليته. </p>
+
+                 `}
+                 else if (input.value == 'zahra') {
+                div.innerHTML = ` 
+                <p> Your vibes is too cute </p>
+
+                 `}
+                 else if (input.value == 'shahd') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> I'm glad to win you as a friend Doctor, But honestly i wanna kill you. </p>
+
+                 `}
+                 else if (input.value == 'moatasem') {
+                div.innerHTML = ` 
+                
+                <p> حبيبي واخويا وصديقي من مكاسب معرض 21 </p>
+
+                 `}
+                 else if (input.value == 'ahmedSherief') {
+                div.innerHTML = ` 
+                <p> You got to socialize more with us </p>
+
+                 `}
+                 else if (input.value == 'Adam') {
+                div.innerHTML = ` 
+                <p> We need to see you more and soon.. </p>
+
+                 `}
+                 else if (input.value == 'basant') {
+                div.innerHTML = ` 
+                <p>بس يا بت</p>
+
+                 `}
+                 else if (input.value == 'Fatma') {
+                div.innerHTML = ` 
+                <p> وحشتني الفراولة بتاعتك </p>
+
+                 `}
+                 else if (input.value == 'MoahmoudHesham') {
+                div.innerHTML = ` 
+                <p> Out D.Designer </p>
+
+                 `}
+                 else if (input.value == 'Mariam') {
+                div.innerHTML = ` 
+                <p> You have to socialize more with us, and i love your name. </p>
+
+                 `}
+                 else if (input.value == 'MostafaReyad') {
+                div.innerHTML = ` 
+                <p> ربنا يهديك ي ابني, بس انا بحبك عشان بتسمع مروان موسى </p>
+
+                 `}
+                 else if (input.value == 'Mans') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> كنت بحب روقانك وافتقدتك والله بس عاوزين نعوضها وتنزل معانا أي تجمع </p>
+
+                 `}
+                 else if (input.value == 'SalmaOsama') {
+                div.innerHTML = ` 
+                <p> To the one who has the loudest laugh, You got a great confidnce and vibes also a good brain. </p>
+
+                 `}
+                 else if (input.value == 'Samira') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                <p> Samira/Soha, Soscialize more with us, we need to know more about you </p>
+
+                 `}
+                 else if (input.value == 'Saprin') {
+                div.innerHTML = ` 
+                <p> You were too kind and talanted </p>
+
+                 `}
+                 else if (input.value == 'Heba') {
+                div.innerHTML = ` 
+                <p> Extremly weird </p>
+
+                 `}
+                 else if (input.value == 'HabibaCasher') {
+                div.innerHTML = ` 
+                <img src="${input.value}.jpg" />
+                    <p>Hi!</p>
+
+
+                 `}
+        })
+
+
+
+    </script>
+</body>
+</html>
